@@ -6,9 +6,9 @@ info:
 paths:
   /cart:
     get:
-        summary: Get cart
+      summary: Get cart
       responses:
-        200:
+        "200":
           description: Cart data
           content:
             application/json:
