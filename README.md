@@ -28,6 +28,8 @@ yarn workspace mock-api start
 - Uses Stoplight Prism to mock directly from `packages/api-spec/openapi.yaml`.
 - Example request: `curl http://localhost:3001/cart`
 
+If you see a Prism spawn error, ensure dependencies are installed (`yarn install`) and retry the command from the repo root.
+
 ## API spec
 
 - Location: `packages/api-spec/openapi.yaml`

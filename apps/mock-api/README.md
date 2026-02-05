@@ -8,7 +8,7 @@ Local mock API powered by Stoplight Prism (using the shared OpenAPI spec).
 yarn workspace mock-api start
 ```
 
-The server listens on `http://localhost:3001` by default. Set `PORT` to override (e.g., `PORT=4000 yarn workspace mock-api start`).
+The server listens on `http://localhost:3001` by default. Set `PORT` to override (e.g., `PORT=4000 yarn workspace mock-api start`). This uses the local Prism binary (installed via `yarn install`) to mock directly from `packages/api-spec/openapi.yaml`.
 
 ## Routes
 
