@@ -1,6 +1,6 @@
-# Mock API (Prism)
+# Mock API (MSW)
 
-Local mock API powered by Stoplight Prism (using the shared OpenAPI spec).
+Local mock API powered by MSW and `@msw/source`, generating handlers at runtime from the shared OpenAPI spec JSON.
 
 ## Run
 
@@ -8,17 +8,8 @@ Local mock API powered by Stoplight Prism (using the shared OpenAPI spec).
 yarn workspace mock-api start
 ```
 
-The server listens on `http://localhost:3001` by default. Set `PORT` to override (e.g., `PORT=4000 yarn workspace mock-api start`). This uses the local Prism binary (installed via `yarn install`) to mock directly from `packages/api-spec/openapi.yaml`.
+The server listens on `http://localhost:3001` by default. Set `PORT` to override (e.g., `PORT=4000 yarn workspace mock-api start`).
 
 ## Routes
 
-- `GET /cart` → sample cart payload:
-  ```json
-  {
-    "items": [
-      { "id": 1, "name": "Laptop", "price": 999, "quantity": 1 },
-      { "id": 2, "name": "Mouse", "price": 29, "quantity": 2 }
-    ],
-    "total": 1057
-  }
-  ```
+- `GET /cart` → returns an object with required `items` (array of `{ id, name, price, quantity }`) and `total` (number). The handlers are generated at runtime from `packages/api-spec/cart.json`.

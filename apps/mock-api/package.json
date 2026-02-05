@@ -3,13 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Mock API service powered by Stoplight Prism",
+  "description": "Mock API service powered by MSW",
   "scripts": {
-    "start": "node start.mjs"
+    "start": "node server.mjs"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@mswjs/http-middleware": "^0.10.3"
+  },
   "devDependencies": {
-    "@stoplight/prism-cli": "^5.14.2"
+    "@msw/source": "^0.6.1",
+    "msw": "^2.12.1"
   },
   "engines": {
     "node": ">=18"
