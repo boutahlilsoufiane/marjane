@@ -16,11 +16,8 @@ This Turborepo includes the following packages/apps:
 
 ### Apps and Packages
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+- `mock-api`: a mock HTTP API powered by MSW
+- `@repo/api-spec`: a shared package that holds the API specification
 
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 

@@ -1,0 +1,17 @@
+{
+  "name": "mock-api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Mock API service powered by MSW",
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "dependencies": {
+    "@mswjs/http-middleware": "^0.12.0",
+    "msw": "^2.6.5"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

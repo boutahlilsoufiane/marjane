@@ -1,0 +1,19 @@
+openapi: 3.0.0
+info:
+  title: Simple Cart API
+  version: 1.0.0
+
+paths:
+  /cart:
+    get:
+        summary: Get cart
+      responses:
+        200:
+          description: Cart data
+          content:
+            application/json:
+              example:
+                items:
+                  - { id: 1, name: "Laptop", price: 999, quantity: 1 }
+                  - { id: 2, name: "Mouse", price: 29, quantity: 2 }
+                total: 1057
