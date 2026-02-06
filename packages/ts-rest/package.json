@@ -1,0 +1,19 @@
+{
+  "name": "@repo/ts-rest",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "description": "Placeholder ts-rest package",
+  "scripts": {
+    "openapi": "tsx scripts/generate-openapi.ts"
+  },
+  "dependencies": {
+    "@ts-rest/core": "latest",
+    "@ts-rest/open-api": "latest",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2"
+  }
+}

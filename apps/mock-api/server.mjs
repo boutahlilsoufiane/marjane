@@ -1,14 +1,14 @@
 import { createServer } from "@mswjs/http-middleware";
 import { fromOpenApi } from "@msw/source/open-api";
-import { readFile } from "node:fs/promises";
-import { resolve } from "node:path";
+import { createRequire } from "node:module";
+
 
 const port = process.env.PORT ?? 3001;
-const specPath = resolve(process.cwd(), "../../packages/api-spec/cart.json");
+const require = createRequire(import.meta.url);
+//const spec = require("../../packages/api-spec/cart.json");
+const spec = require("../../packages/ts-rest/cart.json");
 
 async function start() {
-  const specRaw = await readFile(specPath, "utf8");
-  const spec = JSON.parse(specRaw);
   const handlers = await fromOpenApi(spec);
   const server = createServer(...handlers);
 
