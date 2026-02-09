@@ -15,8 +15,6 @@ export default function Home() {
   const { data: cart, isLoading, error } = client.cart.useQuery(['cart'])
 
 
-  console.log(cart);
-
   if (isLoading) {
     return (
       <div className="p-6">
