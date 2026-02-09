@@ -25,3 +25,5 @@ export const contract = c.router({
     },
   },
 });
+
+export default contract
