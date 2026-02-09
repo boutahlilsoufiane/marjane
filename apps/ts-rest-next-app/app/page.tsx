@@ -1,6 +1,6 @@
 "use client"
 import { initQueryClient } from '@ts-rest/react-query';
-import contract from '../../../packages/ts-rest/contract';
+import contract from 'packages/ts-rest/contract';
 
 const apiBaseUrl = process.env.NEXT_PUBLIC_API_URL ?? 'http://localhost:3001';
 
@@ -40,10 +40,10 @@ export default function Home() {
   }
 
   const items = cart.body.items;
-  const subtotal = items.reduce(
-    (sum, item) => sum + item.price * item.quantity,
-    0
-  );
+const subtotal = items.reduce(
+  (sum: number, item) => sum + item.price * item.quantity,
+  0
+);
   const total = cart.body.total ?? subtotal;
   const tax = Math.max(total - subtotal, 0);
 
