@@ -7,6 +7,9 @@ export default defineConfig({
       target: "./lib/orval.ts",
       client: "react-query",
       httpClient: "fetch",
+       baseUrl: {
+        getBaseUrlFromSpecification: true,
+      },
     }
 },
 });
