@@ -1,8 +1,23 @@
 "use client";
-import { useGetCart } from "@/lib/orval";
+import { useMemo } from "react";
+
+function useFakeGetCart() {
+  // Simple fake hook to avoid API calls while developing
+  const data = useMemo(
+    () => ({
+      items: [
+        { id: 1, name: "Sample item A", price: 12.5, quantity: 2 },
+        { id: 2, name: "Sample item B", price: 7.99, quantity: 1 },
+      ],
+      total: 32.99,
+    }),
+    []
+  );
+  return { data, isLoading: false, error: null };
+}
 
 export default function Home() {
-  const { data: cart, isLoading, error } = useGetCart();
+  const { data: cart, isLoading, error } = useFakeGetCart();
 
   if (isLoading) {
     return (
@@ -29,10 +44,10 @@ export default function Home() {
   }
 
   const items = cart.items;
-const subtotal = items.reduce(
-  (sum: number, item) => sum + item.price * item.quantity,
-  0
-);
+  const subtotal = items.reduce(
+    (sum: number, item) => sum + item.price * item.quantity,
+    0
+  );
   const total = cart.total ?? subtotal;
   const tax = Math.max(total - subtotal, 0);
 
