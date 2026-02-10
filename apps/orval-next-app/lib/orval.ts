@@ -53,7 +53,7 @@ export const getGetCartUrl = () => {
 
   
 
-  return `/cart`
+  return `http://localhost:3001/cart`
 }
 
 export const getCart = async ( options?: RequestInit): Promise<getCartResponse> => {
@@ -79,7 +79,7 @@ export const getCart = async ( options?: RequestInit): Promise<getCartResponse> 
 
 export const getGetCartQueryKey = () => {
     return [
-    `/cart`
+    `http://localhost:3001/cart`
     ] as const;
     }
 
