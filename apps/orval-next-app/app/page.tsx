@@ -1,19 +1,8 @@
-"use client"
-import { initQueryClient } from '@ts-rest/react-query';
-import contract from 'packages/ts-rest/contract';
-
-const apiBaseUrl = process.env.NEXT_PUBLIC_API_URL ?? 'http://localhost:3001';
-
-const client = initQueryClient(contract, {
-  baseUrl: apiBaseUrl,
-  baseHeaders: {},
-});
-
+"use client";
+import { useGetCart } from "@/lib/orval";
 
 export default function Home() {
-
-  const { data: cart, isLoading, error } = client.cart.useQuery(['cart'])
-
+  const { data: cart, isLoading, error } = useGetCart();
 
   if (isLoading) {
     return (
@@ -39,12 +28,12 @@ export default function Home() {
     );
   }
 
-  const items = cart.body.items;
+  const items = cart.items;
 const subtotal = items.reduce(
   (sum: number, item) => sum + item.price * item.quantity,
   0
 );
-  const total = cart.body.total ?? subtotal;
+  const total = cart.total ?? subtotal;
   const tax = Math.max(total - subtotal, 0);
 
   return (
