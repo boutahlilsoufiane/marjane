@@ -1,7 +1,6 @@
-"use client"
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { Providers } from "./providers";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -15,9 +14,6 @@ const geistMono = Geist_Mono({
 });
 
 
-const queryClient = new QueryClient();
-
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -28,9 +24,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <QueryClientProvider client={queryClient}>
-          {children}
-        </QueryClientProvider>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
