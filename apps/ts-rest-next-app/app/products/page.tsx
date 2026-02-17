@@ -36,8 +36,8 @@ export default function ProductsPage() {
     <main className="mx-auto max-w-5xl px-6 py-10 space-y-6">
       <header className="flex items-center justify-between">
         <div>
-          <p className="text-sm text-gray-500">Demo catalog</p>
-          <h1 className="text-2xl font-semibold text-gray-900">Products</h1>
+          <p className="text-sm text-neutral-500">Demo catalog</p>
+          <h1 className="text-2xl font-semibold text-neutral-900">Products</h1>
         </div>
         <Link href="/" className="text-sm text-blue-600 hover:underline">
           ← Back to cart
@@ -48,20 +48,20 @@ export default function ProductsPage() {
         {products.map((product) => (
           <article
             key={product.id}
-            className="rounded-lg border border-gray-200 p-5 shadow-sm"
+            className="rounded-lg border border-neutral-200 p-5 shadow-sm"
           >
             <div className="flex items-start justify-between">
-              <h2 className="text-lg font-semibold text-gray-900">
+              <h2 className="text-lg font-semibold text-neutral-900">
                 {product.name}
               </h2>
-              <span className="text-sm text-gray-500">#{product.id}</span>
+              <span className="text-sm text-neutral-500">#{product.id}</span>
             </div>
-            <p className="mt-2 text-sm text-gray-600">{product.description}</p>
+            <p className="mt-2 text-sm text-neutral-600">{product.description}</p>
             <div className="mt-4 flex items-center justify-between">
-              <div className="text-xl font-semibold text-gray-900">
+              <div className="text-xl font-semibold text-neutral-900">
                 ${product.price.toFixed(2)}
               </div>
-              <div className="text-sm text-gray-500">
+              <div className="text-sm text-neutral-500">
                 Stock: {product.stock}
               </div>
             </div>

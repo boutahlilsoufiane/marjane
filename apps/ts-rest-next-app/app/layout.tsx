@@ -1,16 +1,12 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import { Providers } from "./providers";
 import "./globals.css";
+import { Poppins } from 'next/font/google';
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const poppins = Poppins({
+  subsets: ['latin'],          // Load only Latin characters
+  weight: ['400', '500', '600', '700'], // Choose weights you need
+  variable: '--font-poppins',   // CSS variable name
+  display: 'swap',              // Optimise for performance
 });
 
 
@@ -20,9 +16,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={poppins.className}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Providers>{children}</Providers>
       </body>

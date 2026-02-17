@@ -3,15 +3,15 @@
  */
 
 @theme {
-  --text-xs: 12rem; /** Extra small text size */
-  --text-sm: 14rem; /** Small text size */
-  --text-md: 16rem; /** Medium text size */
-  --text-lg: 18rem; /** Large text size */
-  --text-xl: 20rem; /** Extra large text size */
-  --text-2xl: 24rem; /** 2X large text size */
-  --text-3xl: 30rem; /** 3X large text size */
-  --text-4xl: 32rem; /** 4X large text size */
-  --text-5xl: 36rem; /** 5X large text size */
+  --text-xs: 12px; /** Extra small text size */
+  --text-sm: 14px; /** Small text size */
+  --text-md: 16px; /** Medium text size */
+  --text-lg: 18px; /** Large text size */
+  --text-xl: 20px; /** Extra large text size */
+  --text-2xl: 24px; /** 2X large text size */
+  --text-3xl: 30px; /** 3X large text size */
+  --text-4xl: 32px; /** 4X large text size */
+  --text-5xl: 36px; /** 5X large text size */
   --font-weights-light: 300; /** Light weight */
   --font-weights-regular: 400; /** Regular weight */
   --font-weights-medium: 500; /** Medium weight */
@@ -125,4 +125,5 @@
   --colors-purple-800: #6b21a8; /** Purple 800 */
   --colors-purple-900: #581c87; /** Purple 900 */
   --colors-purple-950: #3b0764; /** Purple 950 */
+  --font-families-poppins: Poppins, 'Poppins Fallback'; /** Poppins font family with Poppins Fallback */
 }
