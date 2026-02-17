@@ -89,7 +89,7 @@ export default function Home() {
             <span>${tax.toFixed(2)}</span>
           </div>
           <div className="flex justify-between text-lg font-bold text-neutral-900 pt-3 border-t border-neutral-300">
-            <span>section headers</span>
+            <span>Total</span>
             <span>${total.toFixed(2)}</span>
           </div>
         </div>
