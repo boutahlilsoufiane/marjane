@@ -1,0 +1,128 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+@theme {
+  --text-xs: 12rem; /** Extra small text size */
+  --text-sm: 14rem; /** Small text size */
+  --text-md: 16rem; /** Medium text size */
+  --text-lg: 18rem; /** Large text size */
+  --text-xl: 20rem; /** Extra large text size */
+  --text-2xl: 24rem; /** 2X large text size */
+  --text-3xl: 30rem; /** 3X large text size */
+  --text-4xl: 32rem; /** 4X large text size */
+  --text-5xl: 36rem; /** 5X large text size */
+  --font-weights-light: 300; /** Light weight */
+  --font-weights-regular: 400; /** Regular weight */
+  --font-weights-medium: 500; /** Medium weight */
+  --font-weights-semibold: 600; /** Semibold weight */
+  --font-weights-bold: 700; /** Bold weight */
+  --line-heights-xs: 1.5; /** Line height for xs text (auto) */
+  --line-heights-sm: 1.5; /** Line height for sm text (auto) */
+  --line-heights-md: 1.5; /** Line height for md text (auto) */
+  --line-heights-lg: 1.5; /** Line height for lg text (auto) */
+  --line-heights-xl: 1.2; /** Line height for xl text (120%) */
+  --line-heights-2xl: 1.2; /** Line height for 2xl text (120%) */
+  --line-heights-3xl: 1.5; /** Line height for 3xl text (auto) */
+  --line-heights-4xl: 1.2; /** Line height for 4xl text (120%) */
+  --line-heights-5xl: 1.5; /** Line height for 5xl text (auto) */
+  --colors-slate-50: #f4f6fa; /** Slate 50 */
+  --colors-slate-100: #e5eaf4; /** Slate 100 */
+  --colors-slate-200: #d6deed; /** Slate 200 */
+  --colors-slate-300: #b3c3dd; /** Slate 300 */
+  --colors-slate-400: #8ea4cc; /** Slate 400 */
+  --colors-slate-500: #7388be; /** Slate 500 */
+  --colors-slate-600: #6071b0; /** Slate 600 */
+  --colors-slate-700: #5562a0; /** Slate 700 */
+  --colors-slate-800: #495184; /** Slate 800 */
+  --colors-slate-900: #3e466a; /** Slate 900 */
+  --colors-slate-950: #292d42; /** Slate 950 */
+  --colors-blue-50: #edf6ff; /** Blue 50 */
+  --colors-blue-100: #d6e9ff; /** Blue 100 */
+  --colors-blue-200: #b6dbff; /** Blue 200 */
+  --colors-blue-300: #83c5ff; /** Blue 300 */
+  --colors-blue-400: #49a5ff; /** Blue 400 */
+  --colors-blue-500: #1f7eff; /** Blue 500 */
+  --colors-blue-600: #075bff; /** Blue 600 */
+  --colors-blue-700: #0140e7; /** Blue 700 */
+  --colors-blue-800: #0836c5; /** Blue 800 */
+  --colors-blue-900: #0e349a; /** Blue 900 */
+  --colors-blue-950: #0e215d; /** Blue 950 */
+  --colors-orange-50: #fdf5ef; /** Orange 50 */
+  --colors-orange-100: #fbe7d9; /** Orange 100 */
+  --colors-orange-200: #f6cdb2; /** Orange 200 */
+  --colors-orange-300: #f0ab81; /** Orange 300 */
+  --colors-orange-400: #e97f4e; /** Orange 400 */
+  --colors-orange-500: #e45e2b; /** Orange 500 */
+  --colors-orange-600: #d34520; /** Orange 600 */
+  --colors-orange-700: #b1341d; /** Orange 700 */
+  --colors-orange-800: #8e2b1e; /** Orange 800 */
+  --colors-orange-900: #72261c; /** Orange 900 */
+  --colors-orange-950: #3d100d; /** Orange 950 */
+  --colors-red-50: #fff1f1; /** Red 50 */
+  --colors-red-100: #ffdfdf; /** Red 100 */
+  --colors-red-200: #ffc5c5; /** Red 200 */
+  --colors-red-300: #ff9c9c; /** Red 300 */
+  --colors-red-400: #ff6363; /** Red 400 */
+  --colors-red-500: #ff3232; /** Red 500 */
+  --colors-red-600: #f02222; /** Red 600 */
+  --colors-red-700: #c90c0c; /** Red 700 */
+  --colors-red-800: #a60e0e; /** Red 800 */
+  --colors-red-900: #891313; /** Red 900 */
+  --colors-red-950: #4b0404; /** Red 950 */
+  --colors-neutral-50: #fafafa; /** Neutral 50 */
+  --colors-neutral-100: #f5f5f5; /** Neutral 100 */
+  --colors-neutral-200: #e5e5e5; /** Neutral 200 */
+  --colors-neutral-300: #d4d4d4; /** Neutral 300 */
+  --colors-neutral-400: #a3a3a3; /** Neutral 400 */
+  --colors-neutral-500: #737373; /** Neutral 500 */
+  --colors-neutral-600: #525252; /** Neutral 600 */
+  --colors-neutral-700: #404040; /** Neutral 700 */
+  --colors-neutral-800: #262626; /** Neutral 800 */
+  --colors-neutral-900: #171717; /** Neutral 900 */
+  --colors-neutral-950: #0a0a0a; /** Neutral 950 */
+  --colors-yellow-50: #fcfee8; /** Yellow 50 */
+  --colors-yellow-100: #f8ffc2; /** Yellow 100 */
+  --colors-yellow-200: #f6ff89; /** Yellow 200 */
+  --colors-yellow-300: #f9ff4a; /** Yellow 300 */
+  --colors-yellow-400: #fdfb12; /** Yellow 400 */
+  --colors-yellow-500: #ece006; /** Yellow 500 */
+  --colors-yellow-600: #ccb202; /** Yellow 600 */
+  --colors-yellow-700: #a38005; /** Yellow 700 */
+  --colors-yellow-800: #86640d; /** Yellow 800 */
+  --colors-yellow-900: #725211; /** Yellow 900 */
+  --colors-yellow-950: #432c05; /** Yellow 950 */
+  --colors-green-50: #f0fdf4; /** Green 50 */
+  --colors-green-100: #dcfce7; /** Green 100 */
+  --colors-green-200: #bbf7d0; /** Green 200 */
+  --colors-green-300: #86efac; /** Green 300 */
+  --colors-green-400: #4ade80; /** Green 400 */
+  --colors-green-500: #22c55e; /** Green 500 */
+  --colors-green-600: #16a34a; /** Green 600 */
+  --colors-green-700: #15803d; /** Green 700 */
+  --colors-green-800: #166534; /** Green 800 */
+  --colors-green-900: #14532d; /** Green 900 */
+  --colors-green-950: #052e16; /** Green 950 */
+  --colors-indigo-50: #eef2ff; /** Indigo 50 */
+  --colors-indigo-100: #e0e7ff; /** Indigo 100 */
+  --colors-indigo-200: #c7d2fe; /** Indigo 200 */
+  --colors-indigo-300: #a5b4fc; /** Indigo 300 */
+  --colors-indigo-400: #818cf8; /** Indigo 400 */
+  --colors-indigo-500: #6366f1; /** Indigo 500 */
+  --colors-indigo-600: #4f46e5; /** Indigo 600 */
+  --colors-indigo-700: #4338ca; /** Indigo 700 */
+  --colors-indigo-800: #3730a3; /** Indigo 800 */
+  --colors-indigo-900: #312e81; /** Indigo 900 */
+  --colors-indigo-950: #1e1b4b; /** Indigo 950 */
+  --colors-purple-50: #faf5ff; /** Purple 50 */
+  --colors-purple-100: #f3e8ff; /** Purple 100 */
+  --colors-purple-200: #e9d5ff; /** Purple 200 */
+  --colors-purple-300: #d8b4fe; /** Purple 300 */
+  --colors-purple-400: #c084fc; /** Purple 400 */
+  --colors-purple-500: #a855f7; /** Purple 500 */
+  --colors-purple-600: #9333ea; /** Purple 600 */
+  --colors-purple-700: #7e22ce; /** Purple 700 */
+  --colors-purple-800: #6b21a8; /** Purple 800 */
+  --colors-purple-900: #581c87; /** Purple 900 */
+  --colors-purple-950: #3b0764; /** Purple 950 */
+}

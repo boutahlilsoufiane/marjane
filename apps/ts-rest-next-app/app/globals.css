@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "@repo/shared-frontend/vars.css";
 
 :root {
   --background: #ffffff;
