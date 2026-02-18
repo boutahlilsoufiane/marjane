@@ -1,129 +1,126 @@
-/**
- * Do not edit directly, this file was auto-generated.
- */
-
 @theme {
-  --text-xs: 12px; /** Extra small text size */
-  --text-sm: 14px; /** Small text size */
-  --text-md: 16px; /** Medium text size */
-  --text-lg: 18px; /** Large text size */
-  --text-xl: 20px; /** Extra large text size */
-  --text-2xl: 24px; /** 2X large text size */
-  --text-3xl: 30px; /** 3X large text size */
-  --text-4xl: 32px; /** 4X large text size */
-  --text-5xl: 36px; /** 5X large text size */
-  --font-weights-light: 300; /** Light weight */
-  --font-weights-regular: 400; /** Regular weight */
-  --font-weights-medium: 500; /** Medium weight */
-  --font-weights-semibold: 600; /** Semibold weight */
-  --font-weights-bold: 700; /** Bold weight */
-  --line-heights-xs: 1.5; /** Line height for xs text (auto) */
-  --line-heights-sm: 1.5; /** Line height for sm text (auto) */
-  --line-heights-md: 1.5; /** Line height for md text (auto) */
-  --line-heights-lg: 1.5; /** Line height for lg text (auto) */
-  --line-heights-xl: 1.2; /** Line height for xl text (120%) */
-  --line-heights-2xl: 1.2; /** Line height for 2xl text (120%) */
-  --line-heights-3xl: 1.5; /** Line height for 3xl text (auto) */
-  --line-heights-4xl: 1.2; /** Line height for 4xl text (120%) */
-  --line-heights-5xl: 1.5; /** Line height for 5xl text (auto) */
-  --color-slate-50: #f4f6fa; /** Slate 50 */
-  --color-slate-100: #e5eaf4; /** Slate 100 */
-  --color-slate-200: #d6deed; /** Slate 200 */
-  --color-slate-300: #b3c3dd; /** Slate 300 */
-  --color-slate-400: #8ea4cc; /** Slate 400 */
-  --color-slate-500: #7388be; /** Slate 500 */
-  --color-slate-600: #6071b0; /** Slate 600 */
-  --color-slate-700: #5562a0; /** Slate 700 */
-  --color-slate-800: #495184; /** Slate 800 */
-  --color-slate-900: #3e466a; /** Slate 900 */
-  --color-slate-950: #292d42; /** Slate 950 */
-  --color-blue-50: #edf6ff; /** Blue 50 */
-  --color-blue-100: #d6e9ff; /** Blue 100 */
-  --color-blue-200: #b6dbff; /** Blue 200 */
-  --color-blue-300: #83c5ff; /** Blue 300 */
-  --color-blue-400: #49a5ff; /** Blue 400 */
-  --color-blue-500: #1f7eff; /** Blue 500 */
-  --color-blue-600: #075bff; /** Blue 600 */
-  --color-blue-700: #0140e7; /** Blue 700 */
-  --color-blue-800: #0836c5; /** Blue 800 */
-  --color-blue-900: #0e349a; /** Blue 900 */
-  --color-blue-950: #0e215d; /** Blue 950 */
-  --color-orange-50: #fdf5ef; /** Orange 50 */
-  --color-orange-100: #fbe7d9; /** Orange 100 */
-  --color-orange-200: #f6cdb2; /** Orange 200 */
-  --color-orange-300: #f0ab81; /** Orange 300 */
-  --color-orange-400: #e97f4e; /** Orange 400 */
-  --color-orange-500: #e45e2b; /** Orange 500 */
-  --color-orange-600: #d34520; /** Orange 600 */
-  --color-orange-700: #b1341d; /** Orange 700 */
-  --color-orange-800: #8e2b1e; /** Orange 800 */
-  --color-orange-900: #72261c; /** Orange 900 */
-  --color-orange-950: #3d100d; /** Orange 950 */
-  --color-red-50: #fff1f1; /** Red 50 */
-  --color-red-100: #ffdfdf; /** Red 100 */
-  --color-red-200: #ffc5c5; /** Red 200 */
-  --color-red-300: #ff9c9c; /** Red 300 */
-  --color-red-400: #ff6363; /** Red 400 */
-  --color-red-500: #ff3232; /** Red 500 */
-  --color-red-600: #f02222; /** Red 600 */
-  --color-red-700: #c90c0c; /** Red 700 */
-  --color-red-800: #a60e0e; /** Red 800 */
-  --color-red-900: #891313; /** Red 900 */
-  --color-red-950: #4b0404; /** Red 950 */
-  --color-neutral-50: #fafafa; /** Neutral 50 */
-  --color-neutral-100: #f5f5f5; /** Neutral 100 */
-  --color-neutral-200: #e5e5e5; /** Neutral 200 */
-  --color-neutral-300: #d4d4d4; /** Neutral 300 */
-  --color-neutral-400: #a3a3a3; /** Neutral 400 */
-  --color-neutral-500: #737373; /** Neutral 500 */
-  --color-neutral-600: #525252; /** Neutral 600 */
-  --color-neutral-700: #404040; /** Neutral 700 */
-  --color-neutral-800: #262626; /** Neutral 800 */
-  --color-neutral-900: #171717; /** Neutral 900 */
-  --color-neutral-950: #0a0a0a; /** Neutral 950 */
-  --color-yellow-50: #fcfee8; /** Yellow 50 */
-  --color-yellow-100: #f8ffc2; /** Yellow 100 */
-  --color-yellow-200: #f6ff89; /** Yellow 200 */
-  --color-yellow-300: #f9ff4a; /** Yellow 300 */
-  --color-yellow-400: #fdfb12; /** Yellow 400 */
-  --color-yellow-500: #ece006; /** Yellow 500 */
-  --color-yellow-600: #ccb202; /** Yellow 600 */
-  --color-yellow-700: #a38005; /** Yellow 700 */
-  --color-yellow-800: #86640d; /** Yellow 800 */
-  --color-yellow-900: #725211; /** Yellow 900 */
-  --color-yellow-950: #432c05; /** Yellow 950 */
-  --color-green-50: #f0fdf4; /** Green 50 */
-  --color-green-100: #dcfce7; /** Green 100 */
-  --color-green-200: #bbf7d0; /** Green 200 */
-  --color-green-300: #86efac; /** Green 300 */
-  --color-green-400: #4ade80; /** Green 400 */
-  --color-green-500: #22c55e; /** Green 500 */
-  --color-green-600: #16a34a; /** Green 600 */
-  --color-green-700: #15803d; /** Green 700 */
-  --color-green-800: #166534; /** Green 800 */
-  --color-green-900: #14532d; /** Green 900 */
-  --color-green-950: #052e16; /** Green 950 */
-  --color-indigo-50: #eef2ff; /** Indigo 50 */
-  --color-indigo-100: #e0e7ff; /** Indigo 100 */
-  --color-indigo-200: #c7d2fe; /** Indigo 200 */
-  --color-indigo-300: #a5b4fc; /** Indigo 300 */
-  --color-indigo-400: #818cf8; /** Indigo 400 */
-  --color-indigo-500: #6366f1; /** Indigo 500 */
-  --color-indigo-600: #4f46e5; /** Indigo 600 */
-  --color-indigo-700: #4338ca; /** Indigo 700 */
-  --color-indigo-800: #3730a3; /** Indigo 800 */
-  --color-indigo-900: #312e81; /** Indigo 900 */
-  --color-indigo-950: #1e1b4b; /** Indigo 950 */
-  --color-purple-50: #faf5ff; /** Purple 50 */
-  --color-purple-100: #f3e8ff; /** Purple 100 */
-  --color-purple-200: #e9d5ff; /** Purple 200 */
-  --color-purple-300: #d8b4fe; /** Purple 300 */
-  --color-purple-400: #c084fc; /** Purple 400 */
-  --color-purple-500: #a855f7; /** Purple 500 */
-  --color-purple-600: #9333ea; /** Purple 600 */
-  --color-purple-700: #7e22ce; /** Purple 700 */
-  --color-purple-800: #6b21a8; /** Purple 800 */
-  --color-purple-900: #581c87; /** Purple 900 */
-  --color-purple-950: #3b0764; /** Purple 950 */
-  --font-families-poppins: Poppins, 'Poppins Fallback'; /** Poppins font family with Poppins Fallback */
+  --text-*: initial;
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-md: 16px;
+  --text-lg: 18px;
+  --text-xl: 20px;
+  --text-2xl: 24px;
+  --text-3xl: 30px;
+  --text-4xl: 32px;
+  --text-5xl: 36px;
+  --font-weights-light: 300;
+  --font-weights-regular: 400;
+  --font-weights-medium: 500;
+  --font-weights-semibold: 600;
+  --font-weights-bold: 700;
+  --line-heights-xs: 1.5;
+  --line-heights-sm: 1.5;
+  --line-heights-md: 1.5;
+  --line-heights-lg: 1.5;
+  --line-heights-xl: 1.2;
+  --line-heights-2xl: 1.2;
+  --line-heights-3xl: 1.5;
+  --line-heights-4xl: 1.2;
+  --line-heights-5xl: 1.5;
+  --color-slate-50: #f4f6fa;
+  --color-slate-100: #e5eaf4;
+  --color-slate-200: #d6deed;
+  --color-slate-300: #b3c3dd;
+  --color-slate-400: #8ea4cc;
+  --color-slate-500: #7388be;
+  --color-slate-600: #6071b0;
+  --color-slate-700: #5562a0;
+  --color-slate-800: #495184;
+  --color-slate-900: #3e466a;
+  --color-slate-950: #292d42;
+  --color-blue-50: #edf6ff;
+  --color-blue-100: #d6e9ff;
+  --color-blue-200: #b6dbff;
+  --color-blue-300: #83c5ff;
+  --color-blue-400: #49a5ff;
+  --color-blue-500: #1f7eff;
+  --color-blue-600: #075bff;
+  --color-blue-700: #0140e7;
+  --color-blue-800: #0836c5;
+  --color-blue-900: #0e349a;
+  --color-blue-950: #0e215d;
+  --color-orange-50: #fdf5ef;
+  --color-orange-100: #fbe7d9;
+  --color-orange-200: #f6cdb2;
+  --color-orange-300: #f0ab81;
+  --color-orange-400: #e97f4e;
+  --color-orange-500: #e45e2b;
+  --color-orange-600: #d34520;
+  --color-orange-700: #b1341d;
+  --color-orange-800: #8e2b1e;
+  --color-orange-900: #72261c;
+  --color-orange-950: #3d100d;
+  --color-red-50: #fff1f1;
+  --color-red-100: #ffdfdf;
+  --color-red-200: #ffc5c5;
+  --color-red-300: #ff9c9c;
+  --color-red-400: #ff6363;
+  --color-red-500: #ff3232;
+  --color-red-600: #f02222;
+  --color-red-700: #c90c0c;
+  --color-red-800: #a60e0e;
+  --color-red-900: #891313;
+  --color-red-950: #4b0404;
+  --color-neutral-50: #fafafa;
+  --color-neutral-100: #f5f5f5;
+  --color-neutral-200: #e5e5e5;
+  --color-neutral-300: #d4d4d4;
+  --color-neutral-400: #a3a3a3;
+  --color-neutral-500: #737373;
+  --color-neutral-600: #525252;
+  --color-neutral-700: #404040;
+  --color-neutral-800: #262626;
+  --color-neutral-900: #171717;
+  --color-neutral-950: #0a0a0a;
+  --color-yellow-50: #fcfee8;
+  --color-yellow-100: #f8ffc2;
+  --color-yellow-200: #f6ff89;
+  --color-yellow-300: #f9ff4a;
+  --color-yellow-400: #fdfb12;
+  --color-yellow-500: #ece006;
+  --color-yellow-600: #ccb202;
+  --color-yellow-700: #a38005;
+  --color-yellow-800: #86640d;
+  --color-yellow-900: #725211;
+  --color-yellow-950: #432c05;
+  --color-green-50: #f0fdf4;
+  --color-green-100: #dcfce7;
+  --color-green-200: #bbf7d0;
+  --color-green-300: #86efac;
+  --color-green-400: #4ade80;
+  --color-green-500: #22c55e;
+  --color-green-600: #16a34a;
+  --color-green-700: #15803d;
+  --color-green-800: #166534;
+  --color-green-900: #14532d;
+  --color-green-950: #052e16;
+  --color-indigo-50: #eef2ff;
+  --color-indigo-100: #e0e7ff;
+  --color-indigo-200: #c7d2fe;
+  --color-indigo-300: #a5b4fc;
+  --color-indigo-400: #818cf8;
+  --color-indigo-500: #6366f1;
+  --color-indigo-600: #4f46e5;
+  --color-indigo-700: #4338ca;
+  --color-indigo-800: #3730a3;
+  --color-indigo-900: #312e81;
+  --color-indigo-950: #1e1b4b;
+  --color-purple-50: #faf5ff;
+  --color-purple-100: #f3e8ff;
+  --color-purple-200: #e9d5ff;
+  --color-purple-300: #d8b4fe;
+  --color-purple-400: #c084fc;
+  --color-purple-500: #a855f7;
+  --color-purple-600: #9333ea;
+  --color-purple-700: #7e22ce;
+  --color-purple-800: #6b21a8;
+  --color-purple-900: #581c87;
+  --color-purple-950: #3b0764;
+  --font-families-poppins: Poppins, 'Poppins Fallback';
 }
